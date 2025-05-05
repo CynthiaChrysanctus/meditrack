@@ -1,0 +1,177 @@
+/* Caregiver CSS */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafd;
+    color: #333;
+  }
+  
+  .main-nav {
+    background-color: hsl(182, 64%, 26%);
+    padding: 1rem 0;
+    color: #fff;
+  }
+  
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a.active {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, hsl(183, 93%, 32%), #61cfc7);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    background-color: #ffffff;
+    color: hsl(189, 71%, 44%);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .quick-start, .resources {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .tile {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tile .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .resource {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: left;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .alert-banner {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  footer {
+    background-color: hsl(181, 76%, 26%);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-brand img {
+    height: 40px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-inner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  

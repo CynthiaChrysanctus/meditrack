@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediTrack | Patient Landing</title>
+  <link rel="stylesheet" href="PatientPage.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="PatientPage.js"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="Landingpageimages/logo.png" alt="MediTrack Logo">
+        <div class="logo-text">MediTrack</div>
+      </div>
+      <nav>
+        <a href="LandingPage.html">Home</a>
+        <a href="/FeaturePage.html">Features</a>
+        <a href="/Aboutpage.html">About</a>
+        <a class="active" href="#">Patients</a>
+        <a href="/CaregiverPage.html">Caregivers</a>
+        <a href="/DownloadAppPage.html">Download</a>
+        <a href="/loginsignup.html">Login</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 id="welcome-greeting">Welcome, Patient! Your health journey starts here.</h1>
+    <p class="subtext">Everything you need to manage your medications, track progress, and learn about your health—right at your fingertips.</p>
+    <button onclick="goToLogin()">Go to My Dashboard</button>
+>
+
+
+  </section>
+
+  <section class="quick-tiles">
+    <div class="tile">
+      <div class="icon">🕒</div>
+      <h3>Today’s Schedule</h3>
+      <p>See what meds you owe today</p>
+    </div>
+    <div class="tile">
+      <div class="icon">📊</div>
+      <h3>Adherence Trends</h3>
+      <p>Review your progress over time</p>
+    </div>
+    <div class="tile">
+      <div class="icon">📁</div>
+      <h3>Reports & Sharing</h3>
+      <p>Download or share your health report</p>
+    </div>
+    <div class="tile">
+      <div class="icon">📚</div>
+      <h3>Health Resources</h3>
+      <p>Learn about conditions & best practices</p>
+    </div>
+  </section>
+
+  <section class="health-hub">
+    <h2>Explore Health Resources</h2>
+    <div class="resource-grid">
+      <div class="resource">📘 Learn about hypertension, diabetes, and more</div>
+      <div class="resource">💊 How to take your pills safely</div>
+      <div class="resource">🏃 Staying active with your treatment plan</div>
+      <div class="resource">🎥 How to set a reminder</div>
+    </div>
+  </section>
+
+  <section class="alerts">
+    <div class="alert">⚠️ Traveling soon? Update your time zone so reminders stay on schedule.</div>
+    <div class="tip">💡 Tip of the Day: Drinking water before your morning med can improve absorption.</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MediTrack. All rights reserved.</p>
+  </footer>
+</body>
+</html>

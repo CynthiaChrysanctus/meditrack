@@ -1,0 +1,133 @@
+/* MediTrack Download Page */
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-section {
+    background-color: hwb(184 33% 16%);
+    color: #fff;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.download-option {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.platform-icon {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.download-option h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.download-button {
+    padding: 0.75rem 1.5rem;
+    background-color: hwb(184 33% 16%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.download-button:hover {
+    background-color: hsl(180, 49%, 46%);
+}
+
+footer {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .download-section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .download-option {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .download-button {
+        padding: 0.75rem 1.2rem;
+    }
+}

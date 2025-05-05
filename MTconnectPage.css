@@ -1,0 +1,6 @@
+/* reuse root, navbar */
+.hero{height:250px;background:url('mtconnect-bg.jpg')center/cover;position:relative;}
+.hero .overlay{background:rgba(0,128,128,0.5);inset:0;position:absolute;}
+.hero-content{position:relative;z-index:2;color:#fff;text-align:center;padding:2rem;}
+.integration{padding:2rem;}
+.integration ul{list-style:square inside;}

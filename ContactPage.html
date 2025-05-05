@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | MediTrack</title>
+  <link rel="stylesheet" href="ContactPage.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1>Contact MediTrack</h1>
+      <p>We’re here to help. Reach out with any questions or support needs.</p>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="container contact-wrapper">
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm">
+        <h2>Send Us a Message</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="responseMessage"></p>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> support@meditrackapp.com</p>
+        <p><strong>Phone:</strong> +1 (800) 555-1234</p>
+        <p><strong>Address:</strong> 123 Wellness Blvd, Calgary, AB, Canada</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 MediTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="ContactPage.js"></script>
+</body>
+</html>

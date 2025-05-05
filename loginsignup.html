@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-Up | MediTrack</title>
+    <link rel="stylesheet" href="loginsignup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Role Toggle Buttons (Patient / Caregiver) -->
+        <div class="role-toggle">
+            <button class="active" onclick="toggleRole('patient')">Patient</button>
+            <button onclick="toggleRole('caregiver')">Caregiver</button>
+        </div>
+
+        <!-- Login / Signup Form -->
+        <div class="form-container">
+            <h2 id="form-title">Login</h2>
+            <form id="login-form">
+                <p>Welcome! Please login to continue.</p>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="signup-form" class="hidden">
+                <h2>Sign Up</h2>
+                <p>Create an account to get started.</p>
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="email" placeholder="Email" id="signup-email" required>
+                <input type="password" placeholder="Password" id="signup-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <div class="toggle-links">
+                <a href="#" onclick="toggleForms()">Need an Account? Sign Up</a>
+                <a href="#" class="hidden" onclick="toggleForms()">Already Have an Account? Log In</a>
+            </div>
+
+            <div class="social-login">
+                <p>Or login with:</p>
+                <div class="social-icons">
+                    <img src="LoginSignupImages.jpg/Googleicon.jpg" alt="Google">
+                    <img src="LoginSignupImages.jpg/Facebookicon.jpg" alt="Facebook">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginsignup.js"></script>
+</body>
+</html>

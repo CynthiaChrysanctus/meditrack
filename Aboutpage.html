@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | MediTrack</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet"/>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="AboutPage.css"/>
+
+</header>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4fefe;
+      color: #333;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="/" class="logo">
+            <img src="Landingpageimages/logo.png" alt="MediTrack" />
+          </a>
+          <div class="brand-text">
+            <h1>MediTrack</h1>
+            <p>Helping you Stay on Track-One Dose at a Time</p>
+          </div>
+        </div>
+    
+        <nav class="nav-links" id="navbar">
+          <a href="/LandingPage.html">Home</a>
+          <a href="/FeaturePage.html">Features</a>
+          <a href="/BlogPage.html">Blog</a>
+          <a href="/ContactPage.html">Contact</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Login / Register <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/loginsignup.html">Patient</a>
+              <a href="/loginsignup.html">Caregiver</a>
+            </div>
+          </div>
+        </nav>
+    
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    
+
+    <!-- Why We Exist -->
+    <section class="grid-section" id="why-we-exist">
+      <div class="text" data-aos="fade-right">
+        <h2>Why We Exist</h2>
+        <p>Millions of people forget to take their medications not due to negligence, but because life gets in the way. MediTrack helps simplify adherence, ensuring no dose is missed.</p>
+        <p><strong>We exist to improve outcomes—one reminder at a time.</strong></p>
+      </div>
+      <div class="image" data-aos="fade-left">
+        <img src="AboutPageimages/Whyweexist.jpg" alt="Why We Exist">
+      </div>
+    </section>
+
+    <!-- Our Solution -->
+<section id="our-solution" class="solution-section" data-aos="fade-up">
+  <div class="container">
+    <h2>Our Solution</h2>
+    <p class="intro">
+      MediTrack brings everything you need to stay consistent with your medications—seamlessly integrated into one intuitive app.
+    </p>
+    <div class="solution-grid">
+      <div class="solution-item">
+        <i class="fas fa-clock"></i>
+        <h3>Smart Scheduling</h3>
+        <p>Automated reminders that adjust to your real-life routine.</p>
+      </div>
+      <div class="solution-item">
+        <i class="fas fa-chart-line"></i>
+        <h3>Insightful Dashboard</h3>
+        <p>Clear visual insights to monitor your progress over time.</p>
+      </div>
+      <div class="solution-item">
+        <i class="fas fa-share-alt"></i>
+        <h3>Seamless Sharing</h3>
+        <p>Export and share your reports with caregivers or doctors in seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Who We Are -->
+<section id="who-we-are" class="who-section" data-aos="fade-up">
+  <div class="container">
+    <div class="who-content">
+      <h2>Who We Are</h2>
+      <p class="highlight">
+        We're a passionate team of healthcare professionals and tech innovators committed to making medication adherence simple, reliable, and stress-free.
+      </p>
+      <p>
+        Founded by <strong>Cynthia Chrysanctus</strong>, MediTrack bridges the gap between clinical care and daily life—drawing from years of experience improving patient workflows and real-world medication challenges.
+      </p>
+      <p>
+        Our mission is simple: empower patients and caregivers with the tools they need to stay on track, stay informed, and stay healthy.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Our Values -->
+    <section class="values-section" data-aos="fade-up">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card" data-aos="zoom-in">
+          <i class="fas fa-lock"></i>
+          <h3>Privacy First</h3>
+          <p>Your data, your control.</p>
+        </div>
+        <div class="value-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Usability</h3>
+          <p>Simple interfaces for all ages.</p>
+        </div>
+        <div class="value-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-heartbeat"></i>
+          <h3>Empathy</h3>
+          <p>We build with compassion.</p>
+        </div>
+        <div class="value-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-universal-access"></i>
+          <h3>Accessibility</h3>
+          <p>Health tools for everyone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="cta" data-aos="zoom-in">
+      <h3>Ready to take control of your health journey?</h3>
+      <button onclick="goToStart()">Get Started</button>
+    </footer>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-branding">
+          <h3>MediTrack</h3>
+          <p>© 2025 MediTrack. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Contact</a>
+          <a href="#">Features</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="AboutPage.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+  </script>
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navbar = document.getElementById('navbar');
+
+  hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+
+<!-- AOS JS (if you're using animations) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
+
+

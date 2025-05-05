@@ -1,0 +1,418 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #f4f9fb;
+    color: #222;
+  }
+  
+  header {
+    background-color: hsl(184, 77%, 45%);
+    padding: 1rem 0;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #e6f2f7;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .subtext {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: lab(49.65% 61.63 38.24);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .quick-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: #ffffff;
+  }
+  
+  .tile {
+    background: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tile .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .health-hub {
+    background: #e6f2f7;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .health-hub h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .resource-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .resource {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  
+  .alerts {
+    background: #fff8e1;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .alerts .tip {
+    margin-top: 0.5rem;
+    background: #f0f8ff;
+    padding: 0.75rem;
+    border-radius: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: hsl(184, 47%, 59%);
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .quick-tiles, .resource-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero button {
+      width: 100%;
+    }
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #f4f9fb;
+    color: #222;
+  }
+  
+  header {
+    background-color: hsl(186, 71%, 55%);
+    padding: 1rem 0;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #e6f2f7;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .subtext {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: lab(48.61% 65.4 43.89);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Quick Start Tiles */
+  .quick-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: #ffffff;
+  }
+  
+  .tile {
+    background: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tile .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Health Info Hub */
+  .health-hub {
+    background: #e6f2f7;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .health-hub h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .resource {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  
+  /* Alerts */
+  .alerts {
+    background: #fff8e1;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .alerts .tip {
+    margin-top: 0.5rem;
+    background: #f0f8ff;
+    padding: 0.75rem;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: hsl(183, 54%, 51%);
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  /* MOBILE RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 0.75rem;
+      padding-top: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+  
+    .hero .subtext {
+      font-size: 1rem;
+    }
+  
+    .hero button {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .tile {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .resource-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .health-hub {
+    background: #e6f2f7;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .health-hub h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: hsl(186, 84%, 40%);
+  }
+  
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .resource {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .resource:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .health-hub h2 {
+      font-size: 1.4rem;
+    }
+  
+    .resource-grid {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  }
+  
