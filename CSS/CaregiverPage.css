@@ -4,14 +4,14 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7fafd;
-    color: #333;
+    background-color: hwb(192 89% 9%);
+    color: hwb(169 2% 52%);
   }
   
   .main-nav {
     background-color: hsl(182, 64%, 26%);
     padding: 1rem 0;
-    color: #fff;
+    color: hsl(0, 0%, 100%);
   }
   
   .nav-inner {
@@ -44,13 +44,14 @@ body {
   }
   
   .nav-links li a {
-    color: white;
+    color: lab(100% 0.01 -0.01);
     text-decoration: none;
     font-weight: 500;
   }
   
   .nav-links li a.active {
     text-decoration: underline;
+    color: lab(100% 0.01 -0.01);
   }
   
   .hero {

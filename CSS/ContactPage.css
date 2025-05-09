@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f8fafa;
-    color: #333;
+    color: hsl(0, 0%, 100%);
   }
   
   .container {
